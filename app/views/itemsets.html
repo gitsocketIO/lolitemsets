@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Select at least one map</h2>
+  <div class="itemsetMap">
+        <form role="form" ng-submit="itemsetMap()">
+          <label>
+            <p>Summoner's Rift</p>
+            <input type="checkbox" ng-model="checkboxModel.value1" ng-true-value="'SummonersRift'" ng-false-value="'NO'" />
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/map/map11.png ">
+          </label>
+          <label>
+            <p>Twisted Treeline</p>
+            <input type="checkbox" ng-model="checkboxModel.value2" ng-true-value="'TwistedTreeline'" ng-false-value="'NO'" />
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/map/map10.png ">
+          </label>
+          <label>
+            <p>Howling Abyss</p>
+            <input type="checkbox" ng-model="checkboxModel.value3" ng-true-value="'HowlingAbyss'" ng-false-value="'NO'" />
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/map/map12.png ">
+          </label>
+          <input type="submit" class="btn btn-primary" value="Next">
+        </form>
+  </div>
+  
+</div>

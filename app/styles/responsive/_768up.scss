@@ -1,0 +1,18 @@
+.global{
+	& .container{
+	    & .itemsetMap label{
+	       width:33%;
+	       float:left;
+	    }
+	    & .itemsetMap{
+	        & label{
+	          & p{
+	            font-size:22px;
+	          }
+	        }
+	        & input[type=submit]{
+	          font-size:22px;
+	        }
+      	}
+	}
+}

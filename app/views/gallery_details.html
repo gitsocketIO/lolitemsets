@@ -1,0 +1,31 @@
+<div class="container">
+  <div ng-repeat="allItemSetData in itemSetData">
+  	<div ng-repeat="(key, value) in allItemSetData">
+  		<div class="set_gallery_details" ng-if="key == param">
+  			 <h2>{{value.json.title}}</h2>
+  			 <div class="set_gallery_detail_img" ng-repeat="championinfo in championInfos | filter: key.split('_')[1]">
+		      	<img ng-src="mycustomcdn/{{championinfo.image.full}}" />
+		     </div>
+		     <p class="set_gallery_detail_author">By <span>{{key.split('_')[0]}}</span></p>
+
+		     <div class="set_gallery_detail_blocks" ng-repeat="blocks in value.json.blocks">
+		     	<h6>{{blocks.type}}</h6>
+		     	<div class="set_gallery_detail_items" ng-repeat="items in blocks.items">
+		     		<div class="set_gallery_detail_item set_gallery_detail_item_{{itemInfo.id}}" ng-repeat="itemInfo in itemInfos.lists.A | filter: items.id" ng-if="itemInfo.id == items.id" ng-click="SelectedItem(itemInfo)">
+		     			<img ng-src="mycustomcdnimg/{{itemInfo.image.full}}" />
+		     			<div class="item_desc">
+				        	<span class="glyphicon glyphicon-remove"></span>
+				        	<p><span>{{itemInfo.name}}</span><br/>{{itemInfo.sanitizedDescription}}</p>
+				    	</div>
+		     		</div>
+		     	</div>
+		     </div>
+		     	
+		     <div class="set_gallery_detail_btn">
+		      	<a ng-click="addLike(key,value)"><span class="glyphicon glyphicon-heart"></span> <span class="like_count">{{value.like}}</span></a>
+		      	<a  download="myCustomSet.json" ng-click="getMyItemSet(value.json,value.json.title,key.split('_')[1])" ng-href="{{url}}"><span class="glyphicon glyphicon-download"></span></a>
+		     </div>
+  		</div>	
+  	</div>
+  </div>
+</div>

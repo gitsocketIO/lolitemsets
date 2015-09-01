@@ -1,0 +1,20 @@
+<div class="container">
+  <h2>Gallery</h2>
+  <div ng-repeat="allItemSetData in itemSetData">
+  	<div class="set_gallery" ng-repeat="(key, value) in allItemSetData">
+	    <div class="set_info">
+	      <div class="set_info_img" ng-repeat="championinfo in championInfos | filter: key.split('_')[1]">
+	      	<img ng-src="mycustomcdn/{{championinfo.image.full}}" />
+	      </div>
+	      <div class="set_info_details">	
+		      <p class="set_info_author"><span>{{value.json.title}}</span> by <span>{{key.split('_')[0]}}</span></p>
+		      <div class="set_info_btn">
+		      	<a ng-click="itemsetdetail(key)"><span class="glyphicon glyphicon-eye-open"></span></a>
+		      	<a ng-click="addLike(key,value)"><span class="glyphicon glyphicon-heart"></span> <span class="like_count">{{value.like}}</span></a>
+		      	<a  download="myCustomSet.json" ng-click="getMyItemSet(value.json,value.json.title,key.split('_')[1])" ng-href="{{url}}"><span class="glyphicon glyphicon-download"></span></a>
+		      </div>
+	  	  </div>
+	    </div>
+	 </div>  
+   </div>
+</div>

@@ -1,0 +1,294 @@
+<div class="container">
+  <h2>Create your item sets </h2>
+  <div class="clear"></div>
+  <div class="sort_items">
+  	<div class="sort_cols">
+  		<h3>Start Items</h3>
+  		<div class="sort_item">
+  			<h4>Jungle</h4>
+  			<div class="customChckBox">
+			  	 <input type='checkbox' id="Jungle" ng-click="includeFilter('Jungle')"/>
+			  	 <label for="Jungle"></label>
+		  	</div>
+  		</div>
+  		<div class="sort_item">
+  			<h4>Lane</h4>
+  			<div class="customChckBox">
+	  	 	<input type='checkbox' id="Lane" ng-click="includeFilter('Lane')"/>
+	  	 	 <label for="Lane"></label>
+	  	 </div>
+  		</div>
+  	</div>
+  	<div class="sort_cols">
+  		<h3>Misc</h3>
+  		<div class="sort_item">
+  			<h4>Consumables</h4>
+  			<div class="customChckBox">
+		  	 	<input type='checkbox' id="Consumable" ng-click="includeFilter('Consumable')"/>
+		  	 	<label for="Consumable"></label>
+		  	 </div>
+		</div>
+		<div class="sort_item">
+			<h4>Gold /s</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="GoldPer" ng-click="includeFilter('GoldPer')"/>
+		  	 	<label for="GoldPer"></label>
+		  	 </div>
+		</div>
+		<div class="sort_item">
+			<h4>Vision</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="Vision" ng-click="includeFilter('Vision')"/>
+		  	 	<label for="Vision"></label>
+		  	 </div>
+		</div>
+		<div class="sort_item">
+			<h4>Trinket</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="Trinket" ng-click="includeFilter('Trinket')"/>
+		  	 	<label for="Trinket"></label>
+		  	 </div>
+		</div>
+  	</div>
+  	<div class="sort_cols">
+  		<h3>Defense</h3>
+  		<div class="sort_item">
+  			<h4>Armor</h4>
+  			<div class="customChckBox">
+		  	 	<input type='checkbox' id="Armor" ng-click="includeFilter('Armor')"/>
+		  	 	<label for="Armor"></label>
+		  	 </div>
+		</div>
+		<div class="sort_item">
+			<h4>Health</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="Health" ng-click="includeFilter('Health')"/>
+		  	 	<label for="Health"></label>
+		  	</div>
+		</div>
+		<div class="sort_item">
+			<h4>Health Regen</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="HealthRegen" ng-click="includeFilter('HealthRegen')"/>
+		  	 	<label for="HealthRegen"></label>
+		  	 </div>
+		</div>
+		<div class="sort_item">
+			<h4>Magic resist</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="SpellBlock" ng-click="includeFilter('SpellBlock')"/>
+		  	 	<label for="SpellBlock"></label>
+		  	 </div>
+		</div>
+  	</div>
+  	<div class="sort_cols">
+  		<h3>Attack</h3>
+  		<div class="sort_item">
+  			<h4>Attack speed</h4>
+  			<div class="customChckBox">
+		  	 	<input type='checkbox' id="AttackSpeed" ng-click="includeFilter('AttackSpeed')"/>
+		  	 	<label for="AttackSpeed"></label>
+		  	 </div>
+		</div>
+		<div class="sort_item">
+			<h4>Critical Strike</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="CriticalStrike" ng-click="includeFilter('CriticalStrike')"/>
+		  	 	<label for="CriticalStrike"></label>
+		  	</div>
+		</div>
+		<div class="sort_item">
+			<h4>Damage</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="Damage" ng-click="includeFilter('Damage')"/>
+		  	 	<label for="Damage"></label>
+		  	 </div>
+		</div>
+		<div class="sort_item">
+			<h4>Life steal</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="LifeSteal" ng-click="includeFilter('LifeSteal')"/>
+		  	 	<label for="LifeSteal"></label>
+		  	 </div>
+		</div>
+		<div class="sort_item">
+			<h4>Armor Penetration</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="ArmorPenetration" ng-click="includeFilter('ArmorPenetration')"/>
+		  	 	<label for="ArmorPenetration"></label>
+		  	 </div>
+		</div>
+  	</div>
+  	<div class="sort_cols">
+  		<h3>Magic</h3>
+  		<div class="sort_item">
+  			<h4>Cooldown Reduction</h4>
+  			<div class="customChckBox">
+		  	 	<input type='checkbox' id="CooldownReduction" ng-click="includeFilter('CooldownReduction')"/>
+		  	 	<label for="CooldownReduction"></label>
+		  	 </div>
+		</div>
+		<div class="sort_item">
+			<h4>Mana</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="Mana" ng-click="includeFilter('Mana')"/>
+		  	 	<label for="Mana"></label>
+		  	 </div>
+		</div>
+		<div class="sort_item">
+			<h4>Mana Regen</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="ManaRegen" ng-click="includeFilter('ManaRegen')"/>
+		  	 	<label for="ManaRegen"></label>
+		  	 </div>
+		</div>
+		<div class="sort_item">
+			<h4>Ability Power</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="SpellDamage" ng-click="includeFilter('SpellDamage')"/>
+		  	 	<label for="SpellDamage"></label>
+		  	 </div>
+		</div>
+		<div class="sort_item">
+			<h4>Magic Penetration</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="MagicPenetration" ng-click="includeFilter('MagicPenetration')"/>
+		  	 	<label for="MagicPenetration"></label>
+		  	 </div>
+		</div>
+		<div class="sort_item">
+			<h4>Spell Vamp</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="SpellVamp" ng-click="includeFilter('SpellVamp')"/>
+		  	 	<label for="SpellVamp"></label>
+		  	 </div>
+		</div>
+  	</div>
+  	<div class="sort_cols">
+  		<h3>Movements <br/> & Controls</h3>
+  		<div class="sort_item">
+  			<h4>Boots</h4>
+  			<div class="customChckBox">
+		  	 	<input type='checkbox' id="Boots" ng-click="includeFilter('Boots')"/>
+		  	 	<label for="Boots"></label>
+		  	 </div>
+		</div>
+		<div class="sort_item">
+			<h4>Movements speed</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="NonbootsMovement" ng-click="includeFilter('NonbootsMovement')"/>
+		  	 	<label for="NonbootsMovement"></label>
+		  	 </div>
+		</div>
+		<div class="sort_item">
+			<h4>Tenacity</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="Tenacity" ng-click="includeFilter('Tenacity')"/>
+		  	 	<label for="Tenacity"></label>
+		  	 </div>
+		</div>
+		<div class="sort_item">
+			<h4>Slow</h4>
+			<div class="customChckBox">
+		  	 	<input type='checkbox' id="Slow" ng-click="includeFilter('Slow')"/>
+		  	 	<label for="Slow"></label>
+		  	 </div>
+		</div>
+  	</div>
+  		
+
+	  	 <!--<div class="customChckBox">
+	  	 	<input type='checkbox' id="OnHit" ng-click="includeFilter('OnHit')"/>
+	  	 	 <label for="OnHit">OnHit</label>
+	  	 </div>
+	  	 
+	  	 
+	  	 <div class="customChckBox">
+	  	 	<input type='checkbox' id="Aura" ng-click="includeFilter('Aura')"/>
+	  	 	 <label for="Aura">Aura</label>
+	  	 </div>
+	  	 <div class="customChckBox">
+	  	 	<input type='checkbox' id="Active" ng-click="includeFilter('Active')"/>
+	  	 	 <label for="Active">Active</label>
+	  	 </div>
+	  	 <div class="customChckBox">
+	  	 	<input type='checkbox' id="Stealth" ng-click="includeFilter('Stealth')"/>
+	  	 	 <label for="Stealth">Stealth</label>
+	  	 </div>-->
+  </div>
+  <div class="custom_items">
+	  <div class="items_list items_list_{{listName}}" ng-repeat="(listName, list) in itemInfos.lists" ng-if="listName == 'A'">
+		 <ul class="ul_list_{{listName}}" dnd-list="list">
+		 	<div class="search_items">
+			    <label><span class="glyphicon glyphicon-search"></span></label>
+			    <input type="text" ng-model="search.name" placeholder="Type item name here… " />
+		    </div>	
+		    <li class="items_list_details items_list_details_{{item.id}}" ng-repeat="item in list|filter:filterFilter|filter: search"
+		        dnd-draggable="item"
+		        dnd-moved="list.splice($index, 1)"
+		        dnd-effect-allowed="copy"
+		        ng-click="SelectedItem(item)"
+		        ng-class="{'selected': models.selected === item}"
+		        >
+		        <img ng-src="mycustomcdnimg/{{item.image.full}}" />
+		        <div class="item_desc">
+		        	<span class="glyphicon glyphicon-remove"></span>
+		        	<p><span>{{item.name}}</span><br/>{{item.sanitizedDescription}}</p>
+		    	</div>
+		    </li>
+		</ul>
+	  </div>
+	  <div class="items_list item_set_box">
+		  <div class="items_list_{{listName}}" ng-repeat="(listName, list) in itemInfos.lists" ng-if="listName > 'A'">
+		  	 <div class="set_title" ng-if="listName == 'B'">
+		  	 	<input class="form-control" type="text" ng-model="infoTitleSet.setTitle" placeholder="Title of your set...." />
+		  	 	<p>by</p>
+		  	 	<input class="form-control" type="text" ng-model="infoTitleSet.setUsername" placeholder="Your name...." />
+		  	 </div>
+			 <ul dnd-list="list" class="ul_list_Global">
+			 	<div class="ul_list_title_rm" ng-if="listName > 'B'">
+			        <input type="text" ng-model="bloc_title" placeholder="Title" class="form-control">
+			        <span class="glyphicon glyphicon-remove" ng-if="listName > 'B'" ng-click="removeList(listName)"></span>
+		    	</div>
+		    	<input type="text" ng-model="bloc_title" placeholder="Title" class="form-control" ng-if="listName == 'B'">
+			    <li class="items_list_details" ng-repeat="item in list"
+			        dnd-draggable="item"
+			        dnd-moved="list.splice($index, 1)"
+			        dnd-effect-allowed="move"
+			        dnd-selected="models.selected = item"
+			        ng-class="{'selected': models.selected === item}"
+			        >
+			        <img ng-src="mycustomcdnimg/{{item.image.full}}" />
+			        <p class="hidden">{{item.id}}</p>
+			    </li>
+			</ul>
+			 <div class="add_bloc" ng-if="$last">
+			        <p ng-click="addBloc(listName)"><span class="glyphicon glyphicon-plus"></span></p>
+			        <div class="error_txt" ng-if="errors !=''">
+			 			<p>{{errors}}</p>
+			 		</div>
+			        <div class="share_set">
+			        	<div class="dl_share_set">
+			        		<a ng-click="getMyItemSetandShare()"><span class="glyphicon glyphicon-download"></span>DOWNLOAD & <span class="glyphicon glyphicon-share"></span>SHARE</a>
+			        	</div>
+			        	<div class="dl_set">
+			        		<a download="myCustomSet.json" ng-click="getMyItemSet()" ng-href="{{url}}"><span class="glyphicon glyphicon-download"></span></a>
+			        	</div>
+			        	<div class="shar_set">
+			        		<a ng-click="shareMyItemSet()"><span class="glyphicon glyphicon-share"></span></a>
+			        	</div>
+			        </div>
+		  	 </div>
+		  </div>
+	</div>
+  </div>
+ <!-- <ul class="items_list" dnd-list="iteminfo" ng-repeat="iteminfo in itemInfos">
+    <li class="items_list_details" ng-repeat="iteminfoext in iteminfo" dnd-draggable="iteminfoext" dnd-moved="iteminfo.splice($index, 1)"
+        dnd-effect-allowed="move"
+        dnd-selected="models.selected = iteminfoext"
+        ng-class="{'selected': models.selected === iteminfoext}">
+      <img ng-src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/{{iteminfoext.image.full}}" />
+      <p>{{}}</p>
+    </li>
+  </ul>  -->
+</div>

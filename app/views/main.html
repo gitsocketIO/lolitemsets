@@ -1,0 +1,29 @@
+<div class="home_slider">
+  <div class="home_txt">
+    <h1>Create your item sets and upgrade your skill!</h1>
+    <h5>LOL ITEM SETS allow you to create custom item sets or to upload item sets of other players.</h5>
+    <div class="home_btn">
+      <a href="/#/itemsets">Let's GO!</a>
+      <a href="/#/about">Learn more</a>
+    </div>
+  </div>
+ </div> 
+<div class="container">
+  <div ng-repeat="allItemSetData in itemSetData">
+    <div class="set_gallery set_gallery_home" ng-repeat="(key, value) in allItemSetData" ng-if="$index<3">
+      <div class="set_info">
+        <div class="set_info_img" ng-repeat="championinfo in championInfos | filter: key.split('_')[1]">
+          <img ng-src="mycustomcdn/{{championinfo.image.full}}" />
+        </div>
+        <div class="set_info_details">  
+          <p class="set_info_author"><span>{{value.json.title}}</span> by <span>{{key.split('_')[0]}}</span></p>
+          <div class="set_info_btn">
+            <a ng-click="itemsetdetail(key)"><span class="glyphicon glyphicon-eye-open"></span></a>
+            <a ng-click="addLike(key,value)"><span class="glyphicon glyphicon-heart"></span> <span class="like_count">{{value.like}}</span></a>
+            <a  download="myCustomSet.json" ng-click="getMyItemSet(value.json,value.json.title,key.split('_')[1])" ng-href="{{url}}"><span class="glyphicon glyphicon-download"></span></a>
+          </div>
+        </div>
+      </div>
+   </div>  
+   </div>
+</div>
