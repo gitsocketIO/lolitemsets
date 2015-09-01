@@ -21,6 +21,13 @@ We also invite him to share the set with the community and to vote for its favor
 
 A gallery of sets is avalaible. Players can vote for their favorite sets to recommand it. They can download sets too. 
 
+## Technologies used
+Nodejs
+Bower
+Yeoman
+Angularjs
+Saas
+PHP 
 
 ## Features 
 
